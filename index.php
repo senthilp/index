@@ -158,10 +158,10 @@
 		.keylet .round {
 			height: 90px;
 			width: 90px;
-			border: 7px double #78B2D8;
-			border-radius: 55px;	
+			border: 7px solid #78B2D8;
+			border-radius: 50%;	
 			text-align: center;
-			font-weight: bold;		
+			font-weight: bold;
 		}
 		.keylet .round a {
 			color: #000000;
@@ -171,7 +171,7 @@
 			left: 88px;
 			left: 97px\9;
 			top: 18px;
-			border: 7px double #78B2D8;
+			border: 7px solid #78B2D8;
 			border-left: 0;
 			background-color: #FFFFFF;
 			height: 54px;
@@ -217,6 +217,38 @@
 			font-family: Arial,Helvetica,sans-serif !important;
     		font-size: 12px !important;
     		font-weight: bold !important;
+		}
+		/* The transition effects from :hover -> normal */
+		.bubble {
+			height: 104px;
+			width: 104px;		
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0.09;
+			filter: alpha(opacity=9);
+			border: 52px solid #9DC4DB;
+			border-radius: 50%;
+			-webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			box-sizing: border-box;          			    							
+  			-webkit-transition: 0s ease;
+  			-moz-transition: 0s ease;
+  			-ms-transition: 0s ease;
+  			-o-transition: 0s ease;
+  			transition: 0s ease; 		
+		}
+		/* The tran;sition from normal > :hover */
+		.bubble:hover {
+			border-width: 0;
+			opacity: 1;
+			border-color: #9DC4DB;    
+	  		-webkit-transition-duration:0.7s;
+	  		-moz-transition-duration:0.7s;
+	  		-ms-transition-duration:0.7s;
+	  		-o-transition-duration:0.7s;
+	  		transition-duration:0.7s;		
 		}
 	</style>	
     <!--[if IE]>
@@ -385,6 +417,7 @@
 	function buildKeylet($model, $pos) {
 		$html = array();
 		$html[] = '<div class="keylet '.$pos.'">';
+		$html[] = '<a href="'.$model["readmeURL"].'" class="bubble" onclick="Utils.popup(this.href); return false;"></a>';
 		$html[] = '<div class="round">';
 		$html[] = '<div style="margin-top: '.$model["offsetTop"].'px;">';
 		$html[] = '<h3 class="h3">';
