@@ -282,7 +282,7 @@
 			  version: 2,
 			  type: 'search',
 			  search: 'from:souders OR from:stoyanstefanov OR from:dalmaer OR from:slicknet OR from:paul_irish OR from:senthil_hi OR from:tonygentilcore OR from:jeresig OR from:DmitrySoshnikov OR from:desandro OR from:ericlaw OR from:littlecalculist OR from:dylans OR from:jsmarr OR from:stubbornella OR from:ryah OR from:t OR from:mranney OR from:ls_n OR from:yaypie OR from:davglass OR sitespeed OR jsperf OR webperf OR webperformance',
-			  interval: 15000,
+			  interval: 10000,
 			  title: 'What\'s happening in SiteSpeed...',
 			  subject: '',
 			  width: 990,
