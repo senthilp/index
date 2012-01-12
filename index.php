@@ -1,5 +1,13 @@
 <?php 
 	$index_json = '{
+						"impress": {
+							"displayName": "Impress",
+							"offsetTop": 35,
+							"readmeURL": "https://raw.github.com/senthilp/impress/master/README",
+							"demoURL": "/impress/presentation",
+							"sourceURL": "https://github.com/senthilp/impress",
+							"description": "Impress project uses impress.js framework library to create a web based powerpoint presentation"
+						},
 						"scriptloader": {
 							"displayName": "Script <br/> Loader",
 							"offsetTop": 27,
@@ -39,7 +47,10 @@
 							"demoURL": "/picman/arena",
 							"sourceURL": "https://github.com/senthilp/picman",
 							"description": "PicMan (Picture Manager) application is a JavaScript based picture uploader utility which"
-						},
+						}
+					}';	
+	
+	$archive_json = '{
 						"smartbuttons": {
 							"displayName": "Smart <br/> Buttons",
 							"offsetTop": 27,
@@ -47,10 +58,7 @@
 							"demoURL": "/smartbuttons/button",
 							"sourceURL": "https://github.com/senthilp/smartbuttons",
 							"description": "SmartButton is a project which showcases various UI treatments for HTML buttons"
-						}
-					}';	
-	
-	$archive_json = '{
+						},	
 						"finder": {
 							"displayName": "Finder",
 							"offsetTop": 35,
