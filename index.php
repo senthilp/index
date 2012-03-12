@@ -66,7 +66,15 @@
 							"demoURL": "/bigpipe/dialup",
 							"sourceURL": "https://github.com/senthilp/bigpipe",
 							"description": "BigPipe, a web performance buzzword coined by Facebook is a technique of building web pages in"
-						},						
+						},	
+						"dnsPrefetch": {
+							"displayName": "DNS <br/> Prefetch",
+							"offsetTop": 27,
+							"readmeURL": "https://github.com/h5bp/html5-boilerplate/wiki/DNS-Prefetching ",
+							"demoURL": "http://www.ebay.com/motors",
+							"sourceURL": "https://github.com/h5bp/html5-boilerplate/wiki/DNS-Prefetching ",
+							"description": "DNS Prefetching is a method of informing the browser of domain names referenced on"
+						},							
 						"finder": {
 							"displayName": "Finder",
 							"offsetTop": 35,
