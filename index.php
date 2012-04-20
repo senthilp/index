@@ -4,7 +4,7 @@
 							"displayName": "eBay <br/> Connect",
 							"offsetTop": 27,
 							"readmeURL": "https://github.scm.corp.ebay.com/spadmanabhan/ebayconnect/blob/master/README.md",
-							"demoURL": "/ebayconnect?user=senthil&title=Bugatti Veyron",
+							"demoURL": "/ebayconnect?user=senthil&title=Bugatti%20Veyron",
 							"sourceURL": "https://github.scm.corp.ebay.com/spadmanabhan/ebayconnect",
 							"description": "eBay Connect started as a 2 day Hackathon project by four eBay engineers"
 						},
