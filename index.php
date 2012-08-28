@@ -1,5 +1,13 @@
 <?php
 	$index_json = '{
+						"snap": {
+							"displayName": "snap",
+							"offsetTop": 35,
+							"readmeURL": "https://github.com/senthilp/snap/blob/master/README.md",
+							"demoURL": "/snap",
+							"sourceURL": "https://github.com/senthilp/snap",
+							"description": "snap is a JQuery plugin that can make any HTML element snapable i.e. camera enabled"
+						},
 	  					"ebayconnect": {
 							"displayName": "eBay <br/> Connect",
 							"offsetTop": 27,
@@ -15,14 +23,6 @@
 							"demoURL": "/3dwebphysics/carousel",
 							"sourceURL": "https://github.com/senthilp/3dwebphysics",
 							"description": "Impressed by the Intro to CSS 3D transforms article by David DeSandro, this project"
-						},
-						"scriptloader": {
-							"displayName": "Script <br/> Loader",
-							"offsetTop": 27,
-							"readmeURL": "https://raw.github.com/senthilp/scriptloader/master/README",
-							"demoURL": "/scriptloader/demo",
-							"sourceURL": "https://github.com/senthilp/scriptloader",
-							"description": "ScriptLoader is a simple JavaScript loader utility API which downloads scripts in parallel with"
 						},
 						"ImageURIGen": {
 							"displayName": "Data URI <br/> Sprites",
@@ -51,6 +51,15 @@
 					}';
 
 	$archive_json = '{
+	,
+						"scriptloader": {
+							"displayName": "Script <br/> Loader",
+							"offsetTop": 27,
+							"readmeURL": "https://raw.github.com/senthilp/scriptloader/master/README",
+							"demoURL": "/scriptloader/demo",
+							"sourceURL": "https://github.com/senthilp/scriptloader",
+							"description": "ScriptLoader is a simple JavaScript loader utility API which downloads scripts in parallel with"
+						},
 						"smartbuttons": {
 							"displayName": "Smart <br/> Buttons",
 							"offsetTop": 27,
@@ -449,11 +458,11 @@
 	function buildKeylet($model, $pos) {
 		$html = array();
 		$html[] = '<div class="keylet '.$pos.'">';
-		$html[] = '<a href="'.$model["readmeURL"].'" class="bubble" onclick="Utils.popup(this.href); return false;"></a>';
+		$html[] = '<a href="'.$model["readmeURL"].'" class="bubble" target="_blank"></a>';
 		$html[] = '<div class="round">';
 		$html[] = '<div style="margin-top: '.$model["offsetTop"].'px;">';
 		$html[] = '<h3 class="h3">';
-		$html[] = '<a href="'.$model["readmeURL"].'" onclick="Utils.popup(this.href); return false;">';
+		$html[] = '<a href="'.$model["readmeURL"].'" target="_blank">';
 		$html[] = $model["displayName"];
 		$html[] = '</a>';
 		$html[] = '</h3>';
@@ -462,7 +471,7 @@
 		$html[] = '<div class="rect">';
 		$html[] = '<div class="text clear">';
 		$html[] = substr($model["description"], 0, strrpos(substr($model["description"], 0, 85), ' ')).'...';
-		$html[] = '<a href="'.$model["readmeURL"].'" onclick="Utils.popup(this.href); return false;">Read more</a>';
+		$html[] = '<a href="'.$model["readmeURL"].'" target="_blank">Read more</a>';
 		$html[] = '</div>';
 		$html[] = '<div class="link">';
 		$html[] = '<a href='.$model["demoURL"].'>Demo</a> | <a href="'.$model["sourceURL"].'" target="_blank">Source</a>';
