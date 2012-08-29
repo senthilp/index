@@ -51,7 +51,6 @@
 					}';
 
 	$archive_json = '{
-	,
 						"scriptloader": {
 							"displayName": "Script <br/> Loader",
 							"offsetTop": 27,
